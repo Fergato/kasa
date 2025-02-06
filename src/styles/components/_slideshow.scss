@@ -1,0 +1,61 @@
+.slideshow {
+  margin: auto;
+  max-width: 1240px;
+  height: 415px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.slideshow-img {
+  width: 100%;
+  border-radius: 25px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-counter {
+  position: absolute;
+  color: $white;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 18px;
+}
+
+.slideshow-arrow {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  color: $white;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 120px;
+  cursor: pointer;
+}
+
+.slideshow-arrow-left {
+  rotate: -90deg;
+  left: 10px;
+}
+
+.slideshow-arrow-right {
+  rotate: 90deg;
+  right: 10px;
+}
+
+@media screen and (max-width: 775px) {
+  .slideshow {
+    height: 255px;
+    margin-top: 20px;
+  }
+
+  .slideshow-arrow {
+    height: 24px;
+  }
+  // ?? suppression du counter sur la maquette bizarre
+  .slideshow-counter {
+    content-visibility: hidden;
+  }
+}

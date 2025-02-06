@@ -1,0 +1,33 @@
+.header {
+  max-width: 1240px;
+  max-height: 68px;
+  min-height: 47px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.link-header a {
+  font-weight: 500;
+  padding-left: 57px;
+  font-size: 24px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.logo {
+  max-width: 40%;
+  min-width: 20%;
+}
+
+@media screen and (max-width: 775px) {
+  .link-header a {
+    padding-left: 26px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

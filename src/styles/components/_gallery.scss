@@ -1,0 +1,26 @@
+.gallery {
+  max-width: 1240px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: $color-2;
+  border-radius: 20px;
+}
+
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 775px) {
+  .card-gallery {
+    gap: 25px;
+  }
+
+  .gallery {
+    margin-top: 0px;
+  }
+}

@@ -3,8 +3,10 @@
 $font-1: "Montserrat", sans-serif;
 
 $color-1: #ff6060;
+$color-2: #f6f6f6;
 $white: #ffffff;
 $black: #000000;
+$grey: #e3e3e3;
 
 * {
   padding: 0;
@@ -12,7 +14,22 @@ $black: #000000;
   box-sizing: border-box;
 }
 
+html {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#root {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 body {
+  margin: auto;
   font-family: $font-1;
   background: $white;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
 }
